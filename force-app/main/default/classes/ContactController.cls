@@ -1,4 +1,3 @@
-//Added Comments
 public with sharing class ContactController {
     @AuraEnabled(cacheable=true)
     public static List<Contact> getContacts(){
@@ -6,3 +5,4 @@ public with sharing class ContactController {
         throw new AuraHandledException('Forced error');
     }
 }
+//New Comments Added
