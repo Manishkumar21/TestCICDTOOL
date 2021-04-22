@@ -8,5 +8,12 @@
         <members>*</members>
         <name>ApexTrigger</name>
     </types>
+    <types>
+        <members>Account</members>
+        <members>Case</members>
+        <members>Opportunity</members>
+        <members>Contact</members>
+        <name>CustomObject</name>
+    </types>
     <version>51.0</version>
 </Package>
