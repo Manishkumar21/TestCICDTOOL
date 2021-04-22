@@ -50,7 +50,6 @@ global class EmailToOwner  implements Database.Batchable<sObject>, Database.Stat
         }
         
         try {
-            // Sends the email
             Messaging.sendEmail(mails);
             
         } catch(Exception e) {

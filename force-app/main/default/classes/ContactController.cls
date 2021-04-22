@@ -5,4 +5,3 @@ public with sharing class ContactController {
         throw new AuraHandledException('Forced error');
     }
 }
-//New Comments Added
