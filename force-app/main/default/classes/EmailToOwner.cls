@@ -41,13 +41,13 @@ global class EmailToOwner  implements Database.Batchable<sObject>, Database.Stat
             string subject = 'Case Record Details';
             string body = 'This file is generated using send email to owner';
             
-            Messaging.singleEmailMessage Emailwithattch = new Messaging.singleEmailMessage();
-            Emailwithattch.setSubject(subject);
-            Emailwithattch.setTargetObjectId(caseOwnerId);
-            Emailwithattch.setSaveAsActivity(false);  
-            Emailwithattch.setPlainTextBody(body);
-            Emailwithattch.setFileAttachments(new Messaging.EmailFileAttachment[]{attach});
-            mails.add(Emailwithattch);
+            Messaging.singleEmailMessage emailwithattch = new Messaging.singleEmailMessage();
+            emailwithattch.setSubject(subject);
+            emailwithattch.setTargetObjectId(caseOwnerId);
+            emailwithattch.setSaveAsActivity(false);  
+            emailwithattch.setPlainTextBody(body);
+            emailwithattch.setFileAttachments(new Messaging.EmailFileAttachment[]{attach});
+            mails.add(emailwithattch);
         }
         
         try {
