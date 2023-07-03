@@ -1,6 +1,7 @@
 public with sharing class AccountController {
     @AuraEnabled(cacheable=true)
     public static List<Account> getAccounts() {
+        //test
         return [
             SELECT Name, AnnualRevenue, Industry
             FROM Account
